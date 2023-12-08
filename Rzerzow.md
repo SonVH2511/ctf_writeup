@@ -45,7 +45,7 @@ https://ctflearn.com/challenge/download/1003
 ![Alt text](IMG/Rzerzow/image-8.png)
 
 - 4 dòng lệnh tiếp theo thực hiện một vài phép toán. Truyền giá trị hiện tại ở thanh ghi `EAX`(0x31) vào `ECX`, làm điều tương tự với `EDI`. Lệnh `imul ECX, EAX` thực hiện phép nhân của giá trị nằm trong 2 thanh ghi rồi lưu vào `ECX`. Khi đó, giá trị ở thanh ghi `ECX` = 0x31<sup>2</sup>. Tiếp theo, lệnh `imul EAX, ECX` trả về giá trị thanh ghi `EAX` = 0x31\*0x31<sup>2</sup> = 0x31<sup>3</sup>. Cộng giá trị ở 2 thanh ghi rồi lưu vào `ECX` với lệnh `add ECX, EAX`, giá trị hiện tại ở `ECX` là = 0x31<sup>2</sup>+0x31<sup>3</sup>. Lệnh `div ECX` với giá trị được truyền vào thanh ghi `EAX` trước đó là `0xbaadf00d`, giá trị phần dư được lưu vào thanh ghi `EDX`. Lệnh `and EDX, 0x1FF` đơn thuần là thực hiện phép `&`. Cuối cùng so sánh giá trị đầu vào của ta với giá trị nằm ở thanh ghi `RSI` với `RDX` đơn vị thông qua câu lệnh `cmp dil, BYTE PTR [rsi+rdx]`.
-  Từ phân tích trên, ta viết thử một đoạn mã khai thác để kiểm tra trường hợp thứ nhất như sau:
+- Từ phân tích trên, ta viết thử một đoạn mã khai thác để kiểm tra trường hợp thứ nhất như sau:
 
 ```python
 
@@ -68,7 +68,8 @@ print(flag)
 ![Alt text](IMG/Rzerzow/image-12.png)
 
 - JUMP is NOT taken, tức là kí tự đầu tiên đã chính xác bởi nếu câu lệnh `jne`(jump not equal) được thực hiện, thì đây sẽ là khối lệnh nó tìm đến :v
-  ![Alt text](IMG/Rzerzow/image-13.png)
+
+![Alt text](IMG/Rzerzow/image-13.png)
 
 - Phân tích và làm điều tương tự với các khối lệnh kiểm tra khác, ta có chương trình python sau:
 
@@ -157,6 +158,7 @@ print(flag)
 ## Mong WRITE UP này giúp ích cho các bạn :v
 
 ```
+from: KMA
 Author: 13r_ə_Rɪst
 Email: sonvha2k23@cvp.vn
 ```
