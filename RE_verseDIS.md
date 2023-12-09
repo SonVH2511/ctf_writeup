@@ -10,7 +10,7 @@ https://ctflearn.com/challenge/188
   ![Alt text](IMG/RE_verseDIS/image.png)
 - Đưa vào `IDA` và `GDB` phân tích, qua một lần chạy thử với `GDB` để quan sát luồng của chương trình, khá bất ngờ khi `flag` được gen ra trước khi so sánh với input, có vẻ là một bài cho điểm :v. Tất nhiên ta sẽ không dừng lại ở đây mà phân tích, viết lại chương trình với mục đích học tập chứ không chỉ là spam lệnh `ni` để lấy flag.
   ![Alt text](IMG/RE_verseDIS/image-1.png)
-- Qua quan sát trên `IDA` với graph view cùng 1 lần chạy chương trình với `GDB` trước đó, có thể thấy khối lệnh này có chức năng sinh ra flag.
+- Qua quan sát trên `IDA` với graph view cùng 1 lần chạy chương trình với `GDB` trước đó, có thể thấy khối lệnh này có chức năng gen flag.
   ![Alt text](IMG/RE_verseDIS/image-2.png)
 - Khối lệnh này không có điều kiện gì để nhảy vào liên quan tới input của chúng ta, nó sẽ lặp 21 lần, tương ứng với độ dài của flag.
   ![Alt text](IMG/RE_verseDIS/image-3.png)
