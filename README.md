@@ -1,4 +1,4 @@
-﻿# CTF writeups Reverse engineering
+﻿# CTF writeups about Reverse engineering
 
 ```
 from KMA
