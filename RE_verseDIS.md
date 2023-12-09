@@ -52,7 +52,7 @@ flag: AbCTF{r3vers1ng_dud3}
 - Tất nhiên Challenge này sẽ dễ dàng hơn khi đọc mã giả C với chức năng `f5` của `IDA`. Nhưng mục tiêu của mình khi viết write-up này là hỗ trợ người đọc trong việc phân tích mã máy nên sẽ không sử dụng nó :v.
   ![Alt text](IMG/RE_verseDIS/image-10.png)
 
-## Mong WRITE UP này giúp ích cho các bạn :v
+## Mong WRITEUP này giúp ích cho các bạn :v
 
 ```
 from KMA

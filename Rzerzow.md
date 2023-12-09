@@ -1,4 +1,5 @@
 ## CTFlearn/RE
+
 ## Rzerzow
 
 ### Đề bài
@@ -156,7 +157,7 @@ while j < 30:
 print(flag)
 ```
 
-## Mong WRITE UP này giúp ích cho các bạn!
+## Mong WRITEUP này giúp ích cho các bạn!
 
 ```
 from KMA
