@@ -1,3 +1,4 @@
+## CTFlearn/RE
 ## Rzerzow
 
 ### Đề bài
@@ -155,10 +156,10 @@ while j < 30:
 print(flag)
 ```
 
-## Mong WRITE UP này giúp ích cho các bạn :v
+## Mong WRITE UP này giúp ích cho các bạn!
 
 ```
-from: KMA
+from KMA
 Author: 13r_ə_Rɪst
 Email: sonvha2k23@cvp.vn
 ```
