@@ -1,10 +1,3 @@
-<style>
-body {
-    background-color: black;
-    color: white;
-}
-</style>
-
 ## CTFlearn/RE
 
 ## Rio32
