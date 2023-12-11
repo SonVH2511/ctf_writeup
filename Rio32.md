@@ -1,3 +1,10 @@
+<style>
+body {
+    background-color: black;
+    color: white;
+}
+</style>
+
 ## CTFlearn/RE
 
 ## Rio32
@@ -26,7 +33,7 @@ done
 ![Alt text](IMG/Rio32/image-1.png)
 
 - Kết quả cũng không bất ngờ lắm, dù sao cũng là bài có độ khó medium :v
-- Dù sao cũng là một manh mối, mình đoán rằng để lấy được flag thì cần set lại giá trị thanh ghi kiểm tra ở một vị trí nào đó. Dùng `IDA` và `GDB` để xem luồng chương trình ra sao
+- Dù sao cũng là một manh mối, mình đoán rằng để lấy được flag thì cần set lại giá trị thanh ghi kiểm tra ở một vị trí nào đó. Dùng `IDA` và `GDB` để xem luồng chương trình ra sao.
 
 - // bài này mình lười nên chưa viết nốt mn thông cảm :v
 
