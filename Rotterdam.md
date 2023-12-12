@@ -55,8 +55,8 @@ https://ctflearn.com/challenge/1076
 -> X = 0x6164726574746f52
 ```
 
-- X = 0x6164726574746f52 -> adrettoR. Giá trị được lưu trữ theo dạng little edian nên giá X = Rotterda
-- Khối sau đó theo thực hiện kiểm tra kí tự tiếp theo của input có tương đương với dấu '\_' hay không
+- X = 0x6164726574746f52 -> adrettoR. Giá trị được lưu trữ theo dạng little edian nên X = Rotterda.
+- Khối sau đó theo thực hiện kiểm tra kí tự tiếp theo của input có tương đương với dấu '\_' hay không.
 
   ![Alt text](IMG/Rotterdam/image-7.png)
 
@@ -113,7 +113,7 @@ r11 = `RAX`%`RCX` = 0x1f6ff5218c40de9c % X = 0x55930dbbe
 -> X = (0x1f6ff5218c40de9c - 0x55930dbbe)/0x4f5352 = ett1W -> W1tte
 ```
 
-- Tới đây chương trình đã kết thúc, ta tổng hợp lại các đoạn flag thu thập được và ghép lại chạy thử
+- Tới đây chương trình đã kết thúc, ta tổng hợp lại các đoạn flag thu thập được và ghép lại chạy thử.
 
   ![Alt text](IMG/Rotterdam/image-12.png)
 
