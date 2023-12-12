@@ -8,7 +8,7 @@ https://ctflearn.com/challenge/1076
 
 ### Lời giải
 
-- Để làm tới bài này, có le mọi người đã có kỹ năng nhất định trong việc phân tích mã máy nên mình sẽ không trình bày quá chi tiết.
+- Để làm tới bài này, có lẽ mọi người đã có kỹ năng nhất định trong việc phân tích mã máy nên mình sẽ không trình bày quá chi tiết.
 - Thực thi chương trình với một vài input cơ bản. Có thể thấy input bài này chỉ bao gồm nội dung của flag mà không có cụm `CTFlearn{}`.
 
   ![Alt text](IMG/Rotterdam/image.png)
