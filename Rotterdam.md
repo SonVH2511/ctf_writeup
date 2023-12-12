@@ -80,7 +80,7 @@ X - 0x4d998c32ff = 0x17d4a53553
 
   ![Alt text](IMG/Rotterdam/image-9.png)
 
-- Cụ thể, trong trường hợp này, phép nhân giữa `RAX` = 0x5858585858 ('XXXXX') và `RBX` = 0xdeb4fa4d998c32ff. Giá trị trong `RAX` = 0x43e738d629612fa8 và `RDX` = 0x4cdb111bc8.
+- Cụ thể, trong trường hợp này, phép nhân giữa `RAX` = 0x5858585858 ('XXXXX') và `RBX` = 0xdeb4fa4d998c32ff có kết quả chia làm 2 phần nằm ở `RAX` và `RDX`. Giá trị trong `RAX` = 0x43e738d629612fa8 và `RDX` = 0x4cdb111bc8.
 
 ```
 - 0x43e738d629612fa8 = 01000011 11100111 00111000 11010110 00101001 01100001 00101111 10101000
