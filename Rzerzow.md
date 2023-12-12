@@ -8,7 +8,7 @@ https://ctflearn.com/challenge/download/1003
 
 ### Lời giải
 
-- Sau khi tải file thực thi về, ta chạy thử để xem chương trình hoạt động ra sao
+- Sau khi tải file thực thi về, ta chạy thử để xem chương trình hoạt động ra sao.
 
 ![Alt text](IMG/Rzerzow/image.png)
 
@@ -119,7 +119,7 @@ for i in flag_comp:
 print(flag)
 ```
 
-thực thi chương trình, ta thu được flag
+thực thi chương trình, ta thu được flag.
 ![Alt text](IMG/Rzerzow/image-14.png)
 
 ```
