@@ -17,7 +17,7 @@ https://ctflearn.com/challenge/1076
 
   ![Alt text](IMG/Rotterdam/image-1.png)
 
-- Challenge này qua graph view của IDA trông có vẻ phức tạp, đồng thời còn có nhiều thông báo gây nhiễu.
+- Đánh giá sơ bộ, Challenge này qua graph view của IDA trông có vẻ phức tạp, đồng thời còn có nhiều thông báo gây nhiễu.
 
   ![Alt text](IMG/Rotterdam/image-2.png)
 
