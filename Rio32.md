@@ -28,7 +28,7 @@ done
 ![Alt text](IMG/Rio32/image-1.png)
 
 - Kết quả cũng không bất ngờ lắm, dù sao cũng là bài có độ khó medium :v
-- Dù sao cũng là một manh mối, mình đoán rằng để lấy được flag thì cần set lại giá trị thanh ghi ở các câu lệnh kiểm tra. Dùng `IDA` và `GDB` để xem luồng chương trình ra sao.
+- Tuy nhiên cũng là một manh mối, mình đoán rằng để lấy được flag thì cần set lại giá trị thanh ghi ở các câu lệnh kiểm tra. Dùng `IDA` và `GDB` để xem luồng chương trình ra sao.
 
 - Có lẽ dự đoán ban đầu là chính xác, Nếu mình nhập đúng 2 số nguyên 1 digit như yêu cầu, chương trình luôn trả về block sau:
 
