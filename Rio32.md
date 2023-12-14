@@ -30,11 +30,11 @@ done
 
 - Có lẽ dự đoán ban đầu là chính xác, Nếu mình nhập đúng 2 số nguyên 1 digit như yêu cầu, chương trình luôn trả về block sau:
 
-  ![Alt text](image-2.png)
+  ![Alt text](IMG/Rio32/image-2.png)
 
 - Vấn đề ở đây là, nếu ta nhập đúng format đầu vào, thì khối lệnh đó sẽ luôn được nhảy đến, bởi lệnh kiểm tra là so sánh tổng của `input` với `0x14` tương đương với `20` ở hệ thập phân, hay lệnh kiểm tra sau đó là `cmp EAX, 0x64` với giá trị của `EAX` bằng tích của 2 giá trị đầu vào với câu lệnh `mul EAX, ECX` trước.
 
-  ![Alt text](image-3.png)
+  ![Alt text](IMG/Rio32/image-3.png)
 
 - 2 phép toán kiểm tra cho ta một bài toán nho nhỏ. Tính 2 giá trị 2 số `a` và `b` với điều kiện:
 
@@ -53,7 +53,7 @@ a * b = 0x64
 
 - Bắt đầu với hướng đi thứ nhất, với `Input` là 10 10, ta gặp chướng ngại đầu tiên ở hàm `GetArgs` là lệnh kiểm tra độ dài.
 
-  ![Alt text](image-4.png)
+  ![Alt text](IMG/Rio32/image-4.png)
 
 - Để bypass, ta set giá trị ở thanh eax thành 0x1 trước lệnh dòng lệnh thực hiện nhảy.
 
@@ -64,11 +64,11 @@ set $eax=0x1
 - Tiếp đó là lệnh kiểm tra như hình dưới. Lệnh kiểm tra này nếu trả về `true`, chương trình sẽ tiến tới Block chứa thông báo **"Error: Argument %s is not a digit\n"**. Vậy ta cần sửa giá trị ra sao để câu lệnh trả về `false`.
 - Lệnh kiểm tra là `test BYTE PTR [eax+ecx*2+1], 8` ta in ra giá trị tại **địa chỉ** có giá trị được tính bằng [eax+ecx*2+1] = 0xf7f25380 * 0x31*2 + 0x1 = 0xF7F253E3. Giá trị ở đây lại khác bằng 0x08d808d8, vượt xa giá trị cần so sánh là 0x8. Có thể do lần patching trước đó để bypass câu lệnh kiểm tra độ dài khiến việc kiểm tra giá trị của Input là số 10 = 0xa lại ngẫu nhiên được bypass theo mà không cần sửa gì thêm. :v
 
-  ![Alt text](image-5.png)
+  ![Alt text](IMG/Rio32/image-5.png)
 
 - Thực hiện tương tự với phép kiểm tra giá trị Input thứ 2. Sau khi hoàn thành hàm kiểm tra Input, với 2 giá trị đầu vào là 10 10, ta hoàn toàn có thể thực hiện nhảy qua 2 hàm kiểm tra nhắc ban đầu mà không cần sửa đổi gì thêm. Spam lệnh `ni` qua hàm `GetFlag`, ta nhận được chuỗi đầu ra của hàm là:
 
-  ![Alt text](image-6.png)
+  ![Alt text](IMG/Rio32/image-6.png)
 
 ```
 flag: CTFlearn{+123R10..de..JaneiR0}
@@ -78,23 +78,23 @@ flag: CTFlearn{+123R10..de..JaneiR0}
 
 - Bắt đầu, ta nhập input tùy ý đúng format để không cần quan tâm hàm kiểm tra Input `GetArgs`.
 
-  ![Alt text](image-7.png)
+  ![Alt text](IMG/Rio32/image-7.png)
 
 - Tới vị trí này, ta thấy giá trị tương ứng với Input mình đã nhập, ở đây là 1 và 3.
 
-  ![Alt text](image-8.png)
+  ![Alt text](IMG/Rio32/image-8.png)
 
 - Mục tiêu đã ở trước mắt, nhưng sửa bằng cách nào? vì thứ được truyền vào EAX chỉ là giá trị chứ không phải địa chỉ, vậy nên mọi cách sửa dưới đây là vô dụng:
 
-  ![Alt text](image-9.png)
+  ![Alt text](IMG/Rio32/image-9.png)
 
 - Thông tin duy nhất ta có về input là địa chỉ của nó. Sau khi tìm hiểu, mình cũng có một số thu hoạch nhất định. Để thay đổi giá trị tại một địa chỉ trong `GDB`, bạn có thể sử dụng lệnh `set` với cú pháp `set {TYPE} ADDRESS = VALUE`, cụ thể trong tình huống này ta làm như sau:
 
-![Alt text](image-10.png)
+![Alt text](IMG/Rio32/image-10.png)
 
 - Sau khi thay đổi giá trị, thực hiện lệnh `ni` và gặt flag như hướng đi 1.
 - Dù viết WU mượt như này, trong quá trình làm Chall này có vẻ mindset của mình không được tốt nên đã có hướng đi khá sai lầm khi test hết mọi trường hợp input như dưới đây để tìm manh mối :))).
-  ![Alt text](image-11.png)
+  ![Alt text](IMG/Rio32/image-11.png)
 - Mình viết WU này sau 1 ngày bất lực với chall rồi quyết định tiếp cận lại bài toán một cách cẩn thận. Mong lời giải này giúp các bạn không tuyệt vọng như mình bởi tìm không ra Writeup mà phải tự giải quyết :))).
 
 ## Mong WRITEUP này giúp ích cho các bạn!
