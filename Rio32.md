@@ -86,7 +86,7 @@ flag: CTFlearn{+123R10..de..JaneiR0}
 
   ![Alt text](IMG/Rio32/image-8.png)
 
-- Mục tiêu đã ở trước mắt, nhưng sửa bằng cách nào? vì thứ được truyền vào EAX chỉ là giá trị chứ không phải địa chỉ, vậy nên mọi cách sửa dưới đây là vô dụng:
+- Mục tiêu đã ở trước mắt, nhưng sửa bằng cách nào? vì thứ được truyền vào thanh ghi `EAX` chỉ là giá trị chứ không phải địa chỉ, vậy nên mọi cách sửa dưới đây là vô dụng:
 
   ![Alt text](IMG/Rio32/image-9.png)
 
