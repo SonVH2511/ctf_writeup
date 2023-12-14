@@ -8,8 +8,10 @@ https://ctflearn.com/challenge/download/1015
 
 ### Lời giải
 
-- Tải file về và chạy thử, `input` bài này có vẻ khá lạ
+- Tải file về và chạy thử, `input` bài này có vẻ khá lạ.
+
   ![Alt text](IMG/Rio32/image.png)
+
 - Với `input` đơn giản như này, trước khi phân tích ta thử vét cạn xem sao.
 
 ```bash script
