@@ -38,7 +38,7 @@ done
 
   ![Alt text](IMG/Rio32/image-3.png)
 
-- Hai câu lệnh kiểm tra cho ta một bài toán nho nhỏ. Tính 2 giá trị 2 số `a` và `b` với điều kiện:
+- Hai câu lệnh kiểm tra cho ta một bài toán nho nhỏ. Tìm giá trị 2 số `a` và `b` thỏa mãn:
 
 ```
 a + b = 0x14
