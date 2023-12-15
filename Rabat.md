@@ -16,7 +16,7 @@ https://ctflearn.com/challenge/188
 
   ![Alt text](IMG/Rabat/image-1.png)
 
-- Với một chương trình có lượng block lớn và luồng phức tạp như này. Điều đầu tiên mình nghĩ là phân tích ngược từ dưới lên nếu có thông báo Success!, Congrats! hay đại loại vậy đề nhặt ra hướng đi đúng của chương trình.
+- Với một chương trình có lượng block lớn và luồng phức tạp như này. Điều đầu tiên mình nghĩ là phân tích ngược từ dưới lên nếu có thông báo Success!, Congrats! hay đại loại vậy đề nhặt ra hướng đi đúng của chương trình thay vì đọc từ trên xuống như thường lệ.
 
   ![Alt text](IMG/Rabat/image-2.png)
 
