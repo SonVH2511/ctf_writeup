@@ -20,7 +20,7 @@ https://ctflearn.com/challenge/188
 
   ![Alt text](IMG/Rabat/image-2.png)
 
-- Đây là 4 thông báo đầu ra của chương trình, qua các phép thử của mình trước đó. Chương trình luôn nhảy tới 2 câu lệnh dưới, gồm **"Debugger Detected!!"** và **"Your flag kernel is too long dude!\n"**.
+- Đây là 4 thông báo đầu ra của chương trình, qua các phép thử của mình trước đó. Chương trình luôn trả về 2 câu lệnh dưới, gồm **"Debugger Detected!!"** và **"Your flag kernel is too long dude!\n"**.
 
 - Output cảnh báo về độ dài đã rõ ràng, ta tìm hiểu vì sao lại là **"Debugger Detected!!"** mà không phải thông báo `true/false` bên trên. Có 2 hướng đi tới khối lệnh này, kiểm tra thử.
 
