@@ -47,7 +47,7 @@ https://ctflearn.com/challenge/188
 
 - Sửa giá trị thanh ghi `EAX` để bypass hàm kiểm tra. Nhảy tới khối lệnh tiếp theo, sau khi in ra giá trị của flag và các thông báo gây nhiễu, khối lệnh thực hiện thao tác lấy ra 8 giá trị đầu và 8 giá trị sau đó Từ input và gán vào 2 biến `x0`, `x1`.
 
-![Alt text](IMG/Rabat/image-8.png)
+  ![Alt text](IMG/Rabat/image-8.png)
 
 - Khi nào rảnh mình sẽ viết nốt :v
 
