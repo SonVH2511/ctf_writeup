@@ -16,11 +16,9 @@ https://ctflearn.com/challenge/download/1015
 
 ```bash script
 #!/bin/bash
-for i in {0..9}
-do
-    for j in {0..9}
-    do
-        ./Rio32 "$i $j"
+for i in {0..9}; do
+    for j in {0..9}; do
+        ./Rio32 $i $j
     done
 done
 ```
