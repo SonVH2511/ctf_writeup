@@ -29,22 +29,22 @@ https://ctflearn.com/challenge/1076
 
   ![Alt text](IMG/Rotterdam/image-4.png)
 
-- Hàm `GetTData` có vẻ là hàm biến đổi giá trị, sau khi bấm vào xem nội dung của hàm, nội dung có vẻ rất dài nhưng đơn giản, dựa trên giá trị trong thanh ghi `EAX` mà cho ra output cụ thể. test thử bằng `GDB`, ta kết luận được rằng output của hàm `GetTData` không phụ thuộc vào kernel đầu vào mà chỉ phụ thuộc vào giá trị hiện tại ở thanh ghi `EAX`.
+- Hàm `GetTData` có vẻ là hàm biến đổi giá trị, sau khi bấm vào xem nội dung của hàm, nội dung có vẻ rất dài nhưng đơn giản, dựa trên giá trị trong thanh ghi `RAX` mà cho ra output cụ thể. test thử bằng `GDB`, ta kết luận được rằng output của hàm `GetTData` không phụ thuộc vào kernel đầu vào mà chỉ phụ thuộc vào giá trị hiện tại ở thanh ghi `RAX`.
 
   ![Alt text](IMG/Rotterdam/image-5.png)
 
 - Để dễ hình dung, mình có viết một đoạn chương trình nhỏ để mô tả hàm `GetTData` như sau:
 
 ```C++
-    if(eax==A)
-        eax = const1;
-    else if(eax==B)
-        eax = const2;
+    if(RAX==A)
+        RAX = const1;
+    else if(RAX==B)
+        RAX = const2;
     ...
     return;
 ```
 
-- Sau các câu lệnh gọi hàm `GetTData` và cộng dồn, giá trị được lưu tại `EBX = 0x1b773ca3c490c435` như hình.
+- Sau các câu lệnh gọi hàm `GetTData` và cộng dồn, giá trị được lưu tại `RBX = 0x1b773ca3c490c435` như hình.
 
   ![Alt text](IMG/Rotterdam/image-6.png)
 
@@ -60,7 +60,7 @@ https://ctflearn.com/challenge/1076
 
   ![Alt text](IMG/Rotterdam/image-7.png)
 
-- Ở khối lệnh Step3, sau các phép biến đổi của hằng số, giá trị của `EAX` = 0xe2f2cef6, thực hiện tính tổng với 4 kí tự tiếp theo của input và so sánh với 0x15764ff46
+- Ở khối lệnh Step3, sau các phép biến đổi của hằng số, giá trị của `RAX` = 0xe2f2cef6, thực hiện tính tổng với 4 kí tự tiếp theo của input và so sánh với 0x15764ff46
 
   ![Alt text](IMG/Rotterdam/image-8.png)
 
@@ -76,7 +76,7 @@ X - 0x4d998c32ff = 0x17d4a53553
 -> X = 0x656e316852 = en1hR -> Rh1ne
 ```
 
-- Ở block `Step5`, có câu lệnh `mul RBX` là đáng chú ý, phép nhân giữa `RBX` và `RAX`, giá trị trong thanh ghi `RBX` = 0xdeb4fa4d998c32ff, khi thực hiện phép nhân, phần bit thấp lưu tại EAX(64bit sau), phần bit cao nằm ở EDX(64 bit đầu).
+- Ở block `Step5`, có câu lệnh `mul RBX` là đáng chú ý, phép nhân giữa `RBX` và `RAX`, giá trị trong thanh ghi `RBX` = 0xdeb4fa4d998c32ff, khi thực hiện phép nhân, phần bit thấp lưu tại RAX(64bit sau), phần bit cao nằm ở RDX(64 bit đầu).
 
   ![Alt text](IMG/Rotterdam/image-9.png)
 
