@@ -102,5 +102,4 @@ flag: CTFlearn{+123R10..de..JaneiR0}
 ```
 from KMA
 Author: 13r_ə_Rɪst
-Email: sonvha2k23@cvp.vn
 ```
