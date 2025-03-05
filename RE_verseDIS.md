@@ -77,5 +77,4 @@ flag: AbCTF{r3vers1ng_dud3}
 ```
 from KMA
 Author: 13r_ə_Rɪst
-Email: sonvha2k23@cvp.vn
 ```
